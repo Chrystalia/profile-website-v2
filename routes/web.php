@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,11 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('profile',[
-        'name' => 'Chrystalia Glenys Winata Ang',
-        'status' => 'Student',
-        'institution' => 'Bina Nusantara University',
-        'description' => 'Welcome to my tiny space on the internet.'
-    ]);
-});
+Route::get('/', [ProfileController::class, 'index']);
