@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HobbyController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [ProfileController::class, 'index']);
+Route::get('/hobbies', [HobbyController::class, 'index']);

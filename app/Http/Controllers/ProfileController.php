@@ -9,6 +9,7 @@ class ProfileController extends Controller
     public function index(){
 
         return view('profile', [
+            'title' => 'Profile',
             'name' => 'Chrystalia Glenys Winata Ang',
             'status' => 'Student',
             'institution' => 'Bina Nusantara University',
