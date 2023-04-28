@@ -18,7 +18,7 @@
         }
     </style>
 </head>
-<body class="box-border antialiased text-gray-900 leading-normal tracking-wider bg-cover bg-orange-50">
+<body class="box-border antialiased text-gray-900 leading-normal tracking-wider relative min-h-fit bg-cover bg-orange-50">
     @yield('container')
 </body>
 </html>

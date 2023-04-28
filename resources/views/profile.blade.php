@@ -2,6 +2,8 @@
 
 @section('title', $title)
 
+@section('container')
+
 	<section class="-z-1 ">
 		<div class="absolute bottom-20 left-5 opacity-90">
 			<svg xmlns="http://www.w3.org/2000/svg" width="610" height="610" viewBox="137.316 170.513 737.06 693.295">
@@ -132,7 +134,41 @@
 
 	</div>
 
-	@extends('layouts.light-dark-mode-script')
-
-</body>
-</html>
+	<script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
+    <script>
+        //Init tooltips
+        tippy('.link',{
+        placement: 'bottom'
+        })
+        //Toggle mode
+        const toggle = document.querySelector('.js-change-theme');
+        const body = document.querySelector('body');
+        const profile = document.getElementById('profile');
+        const institution = document.getElementById('institution');
+        toggle.addEventListener('click', () => {
+        if (body.classList.contains('text-slate-900')) {
+            toggle.innerHTML = "☀️";
+            body.classList.remove('text-slate-900');
+            body.classList.add('text-slate-100');
+            body.classList.remove('bg-orange-50');
+            body.classList.add('bg-slate-900');
+            profile.classList.remove('bg-slate-50');
+            profile.classList.add('bg-slate-800');
+            institution.classList.remove('text-slate-600');
+            institution.classList.add('text-slate-400');
+        } else
+        {
+            toggle.innerHTML = "🌙";
+            body.classList.remove('text-slate-100');
+            body.classList.add('text-slate-900');
+            body.classList.remove('bg-slate-900');
+            body.classList.add('bg-orange-50');
+            profile.classList.remove('bg-slate-800');
+            profile.classList.add('bg-slate-50');
+            institution.classList.remove('text-slate-400');
+            institution.classList.add('text-slate-600');
+        }
+        });
+    </script>
+@endsection

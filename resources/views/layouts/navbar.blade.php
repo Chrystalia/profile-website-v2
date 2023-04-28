@@ -1,23 +1,55 @@
-<nav class="bg-orange-50 border-gray-200 ">
+<nav class="sticky top-0 relative z-50 bg-orange-50 border-gray-200  border-b-2 border-solid border-orange-300">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
 
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
       <ul class="flex flex-col font-medium md:flex-row md:space-x-8 ">
         <li>
-          <a href="/" class="block py-2 pl-3 pr-4 text-orange-500 md:p-0" aria-current="page">Home</a>
+          <a href="/" class="block py-2 pl-3 pr-4 md:p-0 hover:text-orange-500 hover:underline hover:text-decoration-orange-500" aria-current="page">Home</a>
         </li>
         <li>
-          <a href="/hobbies" class="block py-2 pl-3 pr-4 text-gray-900 md:p-0 md:dark:hover:text-blue-500 dark:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-orange-500 md:dark:hover:bg-transparent dark:border-gray-700">Hobby</a>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 md:w-auto dark:text-white hover:text-orange-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:underline hover:text-decoration-orange-500 {{ $active == 'hobby' ? 'text-orange-500' : ''}}">Hobbies<svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
         </li>
         <li>
-          <a href="/achievements" class="block py-2 pl-3 pr-4 text-gray-900 md:p-0 md:dark:hover:text-blue-500 dark:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-orange-500 md:dark:hover:bg-transparent dark:border-gray-700">Achievement</a>
+          <a href="/achievements" class="block py-2 pl-3 pr-4 text-gray-900 md:p-0 hover:text-orange-500 dark:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-orange-500 md:dark:hover:bg-transparent dark:border-gray-700 hover:underline hover:text-decoration-orange-500 {{ $active == 'achievement' ? 'text-orange-500' : ''}}">Achievements</a>
         </li>
       </ul>
     </div>
     </div>
 
-    <div class="z-20 absolute top-0 right-0 h-12 w-18 p-4">
-        <button class="js-change-theme focus:outline-none">🌙</button>
+    <!-- Dropdown menu -->
+    <div id="dropdownNavbar" class="z-10 hidden absolute top-10 right-2/4 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow  dark:bg-gray-700 dark:divide-gray-600">
+        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+          <li class="my-1">
+            <a href="/hobbies#Cook">
+                <span class="px-2 py-1 text-sm font-semibold hover:text-red-600">
+                    Cook
+                </span>
+            </a>
+          </li>
+          <li class="my-1">
+            <a href="/hobbies#Crochet">
+                <span class="px-2 py-1 text-sm font-semibold hover:text-green-600">
+                    Crochet
+                </span>
+            </a>
+          </li>
+          <li class="my-1">
+            <a href="/hobbies#Travel">
+                <span class="px-2 py-1 text-sm font-semibold hover:text-orange-600">
+                    Travel
+                </span>
+            </a>
+          </li>
+        </ul>
+
     </div>
   </nav>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#dropdownNavbarLink").click(function(){
+      $("#dropdownNavbar").toggle();
+    });
+  });
+  </script>
