@@ -86,7 +86,7 @@
 
 			<div class="p-4 md:p-12 text-center lg:text-left">
 				<!-- Image for mobile view-->
-				<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image:url('images/Profile.jpg');"></div>
+				<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image:url('assets/Profile.jpg');"></div>
 
 				<h1 class="text-2xl font-bold pt-10 lg:pt-0">{{ $name }}</h1>
 				<div class="mx-auto lg:mx-0 w-4/5 pt-4 border-b-2 border-green-500 opacity-25"></div>
@@ -123,7 +123,7 @@
 		<!--Img Col-->
 		<div class="z-20 w-full lg:w-2/5">
 			<!-- Big profile image for side bar (desktop) -->
-			<img src="images/Profile.jpg" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+			<img src="assets/Profile.jpg" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
 		</div>
 
 
@@ -154,7 +154,7 @@
             body.classList.remove('bg-orange-50');
             body.classList.add('bg-slate-900');
             profile.classList.remove('bg-slate-50');
-            profile.classList.add('bg-slate-800');
+            profile.classList.add('bg-black');
             institution.classList.remove('text-slate-600');
             institution.classList.add('text-slate-400');
         } else
@@ -164,7 +164,7 @@
             body.classList.add('text-slate-900');
             body.classList.remove('bg-slate-900');
             body.classList.add('bg-orange-50');
-            profile.classList.remove('bg-slate-800');
+            profile.classList.remove('bg-black');
             profile.classList.add('bg-slate-50');
             institution.classList.remove('text-slate-400');
             institution.classList.add('text-slate-600');
