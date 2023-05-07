@@ -37,6 +37,7 @@ or
   <img src="https://github.com/Chrystalia/profile-website-v2/blob/main/public/images/Achievement2.png">
 </p>
 
+
  
 # Features & Tech ⚙️
 - Responsive
@@ -46,6 +47,7 @@ or
 - Tailwind css
 - Tippy.js
 - JQuery
+- JQuery
 
 # Clone & Run Laravel Project 📦
 (Make sure your device have <a href="https://nodejs.org/en/download">npm</a> and <a href="https://getcomposer.org/download/">composer</a> installed)
@@ -54,10 +56,12 @@ In a terminal:
 - Clone the repository 
 ```sh
     git clone https://github.com/Chrystalia/profile-website-v2.git
+    git clone https://github.com/Chrystalia/profile-website-v2.git
 ```
 
 - Redirect to cloned folder  
 ```sh
+    cd .\profile-website-v2\
     cd .\profile-website-v2\
 ```
 
