@@ -1,22 +1,51 @@
 # Personal Website 
 Welcome to my profile website.
 
-### Website Preview
+Don't forget to leave a ⭐ if you find this repository helpful, by clicking the Star in the top right corner 
+
+☆*: .｡. o(≧▽≦)o .｡.:*☆
+
+## Demonstration
+[![profile-website-v2](https://img.youtube.com/vi/X7N8XJd4IQ0/0.jpg)](https://www.youtube.com/watch?v=X7N8XJd4IQ0)
+
+or
+
+<a href="https://youtu.be/X7N8XJd4IQ0"> Clich Here for Demo </a>
+
+## Website Preview
 <p align='center'>    
-  <img src="https://github.com/Chrystalia/laravel-tailwind-profile-website/blob/main/public/images/profile-light-theme.png">
-  <img src="https://github.com/Chrystalia/laravel-tailwind-profile-website/blob/main/public/images/profile-dark-theme.png">
+  <h3>Home Page</h3>
+  <img src="https://github.com/Chrystalia/profile-website-v2/blob/main/public/images/Home.png">
+  <div style="display:flex">
+    <img src="https://github.com/Chrystalia/laravel-tailwind-profile-website/blob/main/public/images/profile-light-theme.gif" style="width:25rem;">
+    <img src="https://github.com/Chrystalia/laravel-tailwind-profile-website/blob/main/public/images/profile-dark-theme.gif" style="width:25rem;">
+  </div>
   
-  <img src="https://github.com/Chrystalia/laravel-tailwind-profile-website/blob/main/public/images/profile-light-theme.gif" style="width:25rem;">
-  <img src="https://github.com/Chrystalia/laravel-tailwind-profile-website/blob/main/public/images/profile-dark-theme.gif" style="width:25rem;">
+  <h3>Hobbies Page</h3>
+  <img src="https://github.com/Chrystalia/profile-website-v2/blob/main/public/images/Hobbies.png">
+  
+  <h3>Achievements Page</h3>
+  <img src="https://github.com/Chrystalia/profile-website-v2/blob/main/public/images/Achievements.png">
+
+  <h3>Achievements Detail</h3>
+  <div>The Title is based on the category of the event</div>
+  <div>Red: Academic</div>
+  <div>Orange: Non-Academic</div>
+  <div>Green: Scholarship</div>
+  <img src="https://github.com/Chrystalia/profile-website-v2/blob/main/public/images/Achievement3.png">
+  <img src="https://github.com/Chrystalia/profile-website-v2/blob/main/public/images/Achievement1.png">
+  <img src="https://github.com/Chrystalia/profile-website-v2/blob/main/public/images/Achievement2.png">
 </p>
+
  
 # Features & Tech ⚙️
 - Responsive
 - Animated background
-- Available in Light mode and Dark mode (click icon on the top right corner)
+- Home Page available in Light mode and Dark mode (click icon on the top right corner)
 - Laravel
 - Tailwind css
 - Tippy.js
+- JQuery
 
 # Clone & Run Laravel Project 📦
 (Make sure your device have <a href="https://nodejs.org/en/download">npm</a> and <a href="https://getcomposer.org/download/">composer</a> installed)
@@ -24,12 +53,12 @@ Welcome to my profile website.
 In a terminal:
 - Clone the repository 
 ```sh
-    git clone https://github.com/Chrystalia/laravel-tailwind-profile-website.git
+    git clone https://github.com/Chrystalia/profile-website-v2.git
 ```
 
 - Redirect to cloned folder  
 ```sh
-    cd .\laravel-tailwind-profile-website\
+    cd .\profile-website-v2\
 ```
 
 - Install composer 

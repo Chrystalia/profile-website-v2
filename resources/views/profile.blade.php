@@ -153,7 +153,7 @@
             body.classList.add('text-slate-100');
             body.classList.remove('bg-orange-50');
             body.classList.add('bg-slate-900');
-            profile.classList.remove('bg-slate-50');
+            profile.classList.remove('bg-white');
             profile.classList.add('bg-black');
             institution.classList.remove('text-slate-600');
             institution.classList.add('text-slate-400');
@@ -165,7 +165,7 @@
             body.classList.remove('bg-slate-900');
             body.classList.add('bg-orange-50');
             profile.classList.remove('bg-black');
-            profile.classList.add('bg-slate-50');
+            profile.classList.add('bg-white');
             institution.classList.remove('text-slate-400');
             institution.classList.add('text-slate-600');
         }
