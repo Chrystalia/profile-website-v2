@@ -29,11 +29,11 @@ or
 
   <h3>Achievements Detail</h3>
   <div>The Title is based on the category of the event</div>
-  <div>Red: Academic</div>
   <div>Orange: Non-Academic</div>
-  <div>Green: Scholarship</div>
-  <img src="https://github.com/Chrystalia/profile-website-v2/blob/main/public/images/Achievement3.png">
+  <div>Red: Academic</div>
+  <div>Green: Scholarship</div>  
   <img src="https://github.com/Chrystalia/profile-website-v2/blob/main/public/images/Achievement1.png">
+  <img src="https://github.com/Chrystalia/profile-website-v2/blob/main/public/images/Achievement3.png">
   <img src="https://github.com/Chrystalia/profile-website-v2/blob/main/public/images/Achievement2.png">
 </p>
 
