@@ -56,12 +56,10 @@ In a terminal:
 - Clone the repository 
 ```sh
     git clone https://github.com/Chrystalia/profile-website-v2.git
-    git clone https://github.com/Chrystalia/profile-website-v2.git
 ```
 
 - Redirect to cloned folder  
 ```sh
-    cd .\profile-website-v2\
     cd .\profile-website-v2\
 ```
 
