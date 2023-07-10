@@ -10,7 +10,7 @@ Don't forget to leave a ⭐ if you find this repository helpful, by clicking the
 
 or
 
-<a href="https://youtu.be/X7N8XJd4IQ0"> Clich Here for Demo </a>
+<a href="https://youtu.be/X7N8XJd4IQ0"> Click Here for Demo </a>
 
 ## Website Preview
 <p align='center'>    
